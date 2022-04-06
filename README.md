@@ -8,3 +8,5 @@ Our MVP is : This app should allow the user to see the list of animals in the sy
 
 We used Trello for our project. Our trello link is https://trello.com/b/jNpfpsNi/agile-project .
 
+Here is a link to the google doc that we put our animal research into. It was going to be used as the seed content for the app. 
+https://docs.google.com/document/d/1ngSEyScEgag42G1Y_r4ZFRY1HMy-SfMy26wbzG6MEVU/edit
