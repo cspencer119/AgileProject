@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AnimalModel
 {
-    internal class AnimalCreate
+    public class AnimalCreate
     {
     }
 }
