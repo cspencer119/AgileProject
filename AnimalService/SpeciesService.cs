@@ -14,8 +14,9 @@ namespace AnimalService
             var entity =
                 new Species()
                 {
-                    SpeciesId = model.CategoryId,
-                    SpeciesName = model.CategoryName
+                    SpeciesId = model.SpeciesId,
+                    SpeciesName = model.SpeciesName,
+                    SpeciesDetail = model.SpeciesDetail
                 };
             using (var ctx = new ApplicationDbContext())
             {
