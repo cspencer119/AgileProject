@@ -9,5 +9,17 @@ namespace Animal_Project.Controllers
 {
     public class SpeciesController : ApiController
     {
+
+
+        public IHttpActionResult Delete(int id)
+        {
+            var service = CreateSpeciesSerice();
+
+            if (!service.DeleteSpecies(id))
+                return InternalServerError();
+
+            return Ok();
+        }
+
     }
 }
