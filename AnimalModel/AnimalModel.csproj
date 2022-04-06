@@ -75,7 +75,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnimalCreate.cs" />
+    <Compile Include="AnimalDetail.cs" />
+    <Compile Include="AnimalEdit.cs" />
+    <Compile Include="AnimalListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SpeciesDetail.cs" />
+    <Compile Include="SpeciesEdit.cs" />
+    <Compile Include="SpeciesListItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
