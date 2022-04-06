@@ -9,5 +9,29 @@ namespace Animal_Project.Controllers
 {
     public class SpeciesController : ApiController
     {
+        public IHttpActionResult Get()
+        {
+            var cService = CreateSpeciesService();
+            var categories = cService.GetSpecies();
+            return Ok(categories);
+        }
+
+        public IHttpActionResult Post(SpeciesCreate species)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+            var cService = CreateSpeciesService();
+            if (!cService.CreateSpecies(species))
+            {
+                return InternalServerError();
+            }
+            return Ok();
+        }
+
+        private SpeciesService CreateSpeciesService()
+        {
+            var speciesService = new SpeciesService();
+            return speciesService;
+        }
     }
 }
