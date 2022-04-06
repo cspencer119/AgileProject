@@ -22,6 +22,6 @@ namespace AnimalData
 
         [ForeignKey(nameof(Species))]
         public int SpeciesId { get; set; }
-        Species Species();
+        public Species Species { get; set; }
     }
 }
