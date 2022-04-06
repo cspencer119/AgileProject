@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AnimalService
 {
-    internal class SpeciesService
+    public class SpeciesService
     {
     }
 }
